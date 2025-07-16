@@ -1,0 +1,288 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+a{
+  color: #000000;
+  
+}
+a:hover{
+  text-decoration: none;
+  color: yellow;
+}
+
+/*============= TOP BAR HEADER =============*/
+.top-bar{
+  background: #000000;
+  height: 2rem;
+  padding: 0.1rem 0;
+}
+.top-bar a{
+  color:rgb(252, 252, 252);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar-toggler span{
+  align-items: center;
+}
+.navbar{
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: antiquewhite;
+  color:rgb(255, 255, 255);
+}.navbar h1{
+  font-family: 'Pacifico', cursive;
+  font-weight: bolder;
+  letter-spacing: 0.25rem;
+}
+.headr{
+  background: #000000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .7);
+}
+.nav-item{
+  padding: 0.5rem;
+}
+.nav-link{
+  color: white!important;
+}
+.nav-link:hover{
+  color: yellow!important;
+}
+
+/*============= CAROUSEL =============*/
+#carousel{
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .5);
+  
+}
+.carousel-inner{
+  height: 35rem!important;
+}
+
+.carousel-item-prev,
+.carousel-item-next,
+.carousel-item.active{
+  transition: transform 2.2s;
+}
+/*---Change Carousel Transition Speed --*/
+
+
+
+/*-- Carousel Content --*/
+
+.carousel-caption h3,
+.carousel-caption h4,
+.carousel-caption h5{
+  font-family: 'Satisfy', cursive;
+  font-size: 3rem;
+  color: #000000;
+  text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .4);
+}
+
+.carousel-caption,
+.carousel-caption img{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);  
+}
+
+/*===== FIXED BACKGROUND IMG =====*/
+.fixed{
+  background-image: url(../img/static1.jpg);
+  position: fixed;
+}
+.fixed-background {
+  overflow: hidden; /*-- Correction for iOS --*/
+}
+.bg-custom{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.fixed-background h2{
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.col-10{
+  align-self: center;
+}
+
+/* OSCAR NOMINATED FILMS */
+.oscar{
+  background-color: #000000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .7);
+}
+.oscar h1{
+  color:rgb(252, 252, 252);
+  font-size: 5rem;  
+  font-weight: 800;
+}
+
+.oscar .row{
+  margin-bottom: 0.5rem;
+}
+.oscar .row:hover{
+  scale: 110%;
+  transform: 2s;
+  z-index: 999!important;
+}
+/* tiles */
+.lang
+{
+  color: rgb(219, 88, 0);
+  font-family: 'Pacifico', cursive;
+}
+
+
+
+.tile{
+  margin-left: 3rem;
+  border-color: white;
+  border-style: solid;
+  height: 15rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 7px 5px 9px rgba(0,0,0,0.4);
+  
+}
+.fa-star{
+  color: gold;
+}
+
+
+/*============= FOOTER =============*/
+footer a{
+  color: white;
+}
+footer a:hover{
+  color: yellow;
+}
+ul.social{
+  list-style-type: none;
+  display: flex;
+  max-width: 25rem;
+  margin: 0 auto;
+  
+}
+ul.social li{
+  margin: 0 auto;
+}
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* Devices under 768px (md) */
+@media (max-width: 991.98px) {
+  .carousel-inner{
+    height: 25rem!important;
+  }
+  .carousel-caption h3,
+  .carousel-caption h4,
+  .carousel-caption h5{
+    font-family: 'Satisfy', cursive;
+    font-size: 1rem;
+    color: #000000;
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .4);
+  }
+  .mquo h4{
+    font-size: 0.9rem;
+  }
+  .carousel-caption,
+  .carousel-caption img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .tile{
+    margin-left: 0rem;
+    height: auto;
+  }
+  .fixed-background{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .fixed-background h2{
+    width: 100%;
+    font-size: 1.2rem;
+    padding-left: 0!important;
+    padding-right: 0;
+  }
+  .nu{
+    padding: 0!important;
+  }
+  .bg-custom h1{
+    font-size: 2rem!important;
+  }
+  ul.social{
+    padding: 0;
+  }
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
