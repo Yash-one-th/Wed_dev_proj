@@ -1,0 +1,766 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>World Cinema DataBase</title>
+
+	<link rel="shortcut icon" href="{% static 'base/img/log.jpg' %}">
+	<!-- Bootstrap 4.5 CSS -->
+	<link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css' %}">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="{% static 'base/css/style.css' %}">
+	<!-- Google Fonts -->
+
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+	
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Top Bar -->
+	<div class="top-bar" >
+		<div class="container">
+			<div class="col-12 text-right pr-2">
+				<p><a href="tel:+916305416406">call us at 6305416406</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- End Top Bar -->
+
+
+	<!-- Navigation -->
+	<div class="headr" >
+		<nav class="navbar  navbar-dark navbar-expand-lg" >
+			<div class="container">
+				<a href="index.html" class="navbar-brand">
+					<h1>wdb</h1>
+				</a>
+	
+				<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarItems">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="navbarItems">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+						<li class="nav-item"><a href="#movies" class="nav-link">MOVIES</a></li>
+						<li class="nav-item"><a href="" class="nav-link">CONTACT US</a></li>
+					</ul>
+				</div>
+	
+			</div>
+		</nav>
+		
+		<div class="container-fluid">
+			<div class="row ">
+				<div class="col-md-1"></div>
+				<div class="col-lg-5 ">
+					<a href="index.html">
+						<img src="{% static 'base/img/log.jpg' %}" alt="" class="w-100">
+					</a>
+				</div>
+				<div class="col-lg-5 ml-10	justify-content-end pt-4">
+					<a href="https://en.wikipedia.org/wiki/Satyajit_Ray" target="_blank">
+						<img src="{% static 'base/img/head.jpg' %}" alt="" class="w-100">
+					</a>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<!-- End Navigation -->
+
+
+	<!-- Image Carousel -->
+	<div id="carousel" class="carousel " data-ride="carousel" data-interval="250000">
+
+		<!-- Carousel Content -->
+		
+		<div class="carousel-inner">
+			<!-- slide-1 -->
+			<div class="carousel-inner caro-1 carousel-item active">
+				
+
+				<div class="carousel-caption">
+					<div class="container">
+						<div class="row justify-content-start">
+							<img src="{%static 'base/img/bong.jpg' %}" class="col-5" alt="">
+						</div>
+
+						<div class="row justify-content-end ">
+							<div class="col-7 quote">
+								<h3 class=" text-left ">"Once you overcome the one inch tall barrier of subtitles, you will be introduced to so many more amazing films."</h3>
+								<h5 class="text-right text-dark">~Bong Joon Ho</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- slide-1 -->
+			<!-- slide-2 -->
+			
+
+			<div class="carousel-inner carousel-item" style="background-color: #eae8e4;">
+				<div class="carousel-caption" >
+					<div class="container">
+
+						<div class="row  justify-content-end">
+							<img src="{% static 'base/img/martin.jpg' %}" class="col-5 " alt="">
+						</div>
+
+						<div class="row justify-content-start">
+							<div class="col-7 quote">
+								<h3 class="p-3 pt-2 text-left pl-2 ">"Movies are the memories of our lifetime. We need to keep them alive."</h3>
+								<h4 class="pb-3 ml-2 text-right pr-2">~Martin Scorsese</h4>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- slide-2 -->
+			<!-- slide-3 -->
+			<div class="carousel-inner carousel-item ">
+				<div class="carousel-caption">
+					<div class="container">
+
+						<div class="row  justify-content-start">
+							<img src="{%static 'base/img/sjr.jpg' %}" class="col-5 " alt="">
+						</div>
+
+						<div class="row justify-content-end">
+							<div class="col-7 quote">
+								<h3 class="p-3 pt-2 text-left pl-2 ">"Cinema's characteristic forte is its ability to capture and communicate the intimacies of the human mind."</h3>
+								<h4 class="pb-3 ml-2 text-right pr-2">~Satyajit Ray</h4>
+							</div>
+							
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- slide-3 -->
+			<!-- slide-4 -->
+			<div class="carousel-inner carousel-item ">
+				<div class="carousel-caption">
+					<div class="container">
+
+						<div class="row justify-content-start">
+							<div class="col-7 quote">
+								<h3 class="p-3 pt-2 text-left pl-2 ">"Love is all a matter of timing. it's no good meeting the right person too soon or too late."</h3>
+								<h3 class="pb-3 ml-2 text-right pr-2">~Wong Kar Wai</h3>
+							</div>
+						</div>
+
+						<div class="row justify-content-end">
+							<img src="{% static 'base/img/wong.jpg' %}" class="col-4" alt="image 4">
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- slide-4 -->
+			<!-- slide-5 -->
+			<div class="carousel-inner carousel-item ">
+				<div class="carousel-caption">
+					<div class="container">
+						<div class="row justify-content-start ">
+							<img src="{% static 'base/img/stanley.jpg' %}" class="col-5" alt="image 5">
+						</div>
+
+						<div class="row justify-content-end ">
+							<div class="col-7 quote">
+								<h3 class="p-3 pt-2 text-left pl-2">"Never say no to an idea, you never knwo how that idea will ignite another idea."</h3>
+								<h3 class="pb-3 ml-2 text-right pr-2">~Stanley Kubrick</h3>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- slide-5 -->
+		</div>
+
+		
+		
+		<!-- End Carousel Content -->
+
+
+		<!-- Previous & Next Buttons -->
+		<a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+			<span class="fas fa-chevron-left fa-5x"></span>
+		</a>
+		<a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+			<span class="fas fa-chevron-right fa-5x"></span>
+		</a>
+		<!-- End Previous & Next Buttons -->
+
+	</div>
+	<!-- End Image Carousel -->
+
+
+	<!-- Main Page Heading -->
+	<!-- <div class="col-12 text-center mt-5">
+		<h1 class="text-dark">edoti</h1>
+	</div> -->
+	
+	<!-- Start Fixed Background IMG -->
+	<div class="fixed-background " >
+		<div class="text-light bg-custom text-center p-2">
+			<div class="col-12 p-3">
+				<div class="col-lg-10 mx-auto p-5 nu" >
+					<h2 class=" p-5 nu" >here we curated the gems of world cinema that every true cinema lover and every human must watch before they die. these are amazing films that touch our heart, awaken our vision, introduce us to a new world, change the way we see this world.</h2>
+				</div>
+			</div>
+		</div>
+		<div class="fixed-wrap">
+			<div class="fixed"></div>
+		</div>
+	</div>
+	<!-- End Fixed Background IMG -->
+	<!-- <br>
+	<a name='ocsar'></a>
+	<div class="container-fluid">
+		<div class=" col-lg-8">
+			<img src="img/2008.jpg" class='w-100'alt="">			
+		</div>
+	</div> -->
+	<div class="oscar p-5">
+		<center>
+		<div class="container-fluid">
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-10" >
+						<img src="{img/2008.jpg" alt="" class="w-100">
+					</div>		
+					<div class="col-2" >
+						<div class="row">
+							<h1>20</h1>
+						</div>
+						<div class="row">
+							<h1>08</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-10" >
+						<img src="{% static 'base/img/2009.jpg' %}" alt="" class="w-100">
+					</div>		
+					<div class="col-2" >
+						<div class="row">
+							<h1>20</h1>
+						</div>
+						<div class="row">
+							<h1>09</h1>
+						</div>
+					</div>
+				</div>	
+
+				<div class="row">
+					<div class="col-10" >
+						<img src="img/2010.jpg" alt="" class="w-100">
+					</div>		
+					<div class="col-2" >
+						<div class="row">
+							<h1>20</h1>
+						</div>
+						<div class="row">
+							<h1>10</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-10" >
+						<img src="img/2011.jpg" alt="" class="w-100">
+					</div>		
+					<div class="col-2" style="border: 1px solid white;">
+						<div class="row">
+							<h1>20</h1>
+						</div>
+						<div class="row">
+							<h1>11</h1>
+						</div>
+					</div>
+				</div>	
+
+				<div class="row" style="border: 1px solid white;">
+					<div class="col-10" >
+						<img src="img/2012.jpg" alt="" class="w-100">
+					</div>		
+					<div class="col-2" >
+						<div class="row">
+							<h1>20</h1>
+						</div>
+						<div class="row">
+							<h1>12</h1>
+						</div>
+					</div>
+				</div>	
+
+			</div>
+		</div>
+		</center>
+	</div>
+
+ 
+	<!-- movie tiles section -->
+	<a name="movies"></a>
+    {% block content %}
+    {% endblock%}
+	{% comment %} <div class="container-fluid">
+
+		<!-- movie-1 -->
+		<div class=" tile  col-lg-8" style="border: 0.1px solid black;">
+			<div class="row ">
+				<!-- movie poster -->
+				<div class="col-2 p-1"><img src="img/tiles/pp.jpg" class="w-100" alt=""></div>
+				<div class="col-10 p-1">
+					<div class="row">
+						<div class="col-10" >
+							<!-- movie name -->
+							<a href="../p1/index.html">
+							<h4><b>Pather Panchali</b>(1955)<span class="lang"> Bangla</span></h4></a>
+						</div>
+						<div class="col-2">
+							<!-- rating -->
+							<h4><i class="fas fa-star"></i> 8.4</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- description -->
+							<p>Impoverished priest Harihar Ray, dreaming of a better life for himself and his family, leaves his rural Bengal village in search of work.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- cast and crew -->
+							
+							<p><b>Director:</b><a href="https://en.wikipedia.org/wiki/Satyajit_Ray" target="_blank"> Satyajit Ray</a></p>
+							<p><b>Cast:</b>
+								<a href="https://en.wikipedia.org/wiki/Karuna_Banerjee" target="_blank">Karuna Banerjee, </a>
+								<a href="https://en.wikipedia.org/wiki/Subir_Banerjee" target="_blank">Subir Banerjee,</a>
+								<a href="https://en.wikipedia.org/wiki/Chunibala_Devi" target="_blank">Chunibhala Devi</a>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div class=" tile  col-lg-8" style="border: 0.1px solid black;">
+			<div class="row ">
+				<!-- movie poster -->
+				<div class="col-2 p-1"><img src="img/tiles/chungking.jpg" class="w-100" alt=""></div>
+				<div class="col-10 p-1">
+					<div class="row">
+						<div class="col-10" >
+							<!-- movie name -->
+							<a href="../p2/index.html">
+							<h4><b>Chungking Express</b>(1994) <span class="lang"> Chinese</span></h4></a>
+						</div>
+						<div class="col-2">
+							<!-- rating -->
+							<h4><i class="fas fa-star"></i> 8.1</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- description -->
+							<p>Two melancholy Hong Kong policemen fall in love: one with a mysterious female underworld figure, the other with a beautiful and ethereal waitress at a late-night restaurant he frequents.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- cast and crew -->
+							<p><b>Director:</b><a href="https://en.wikipedia.org/wiki/Wong_Kar-wai" target="_blank"> Kar-Wai Wong</a></p>
+							<p><b>Cast:</b>
+								<a href="https://en.wikipedia.org/wiki/Brigitte_Lin" target="_blank">Brigitte Lin</a>
+								<a href="https://en.wikipedia.org/wiki/Takeshi_Kaneshiro" target="_blank">Takeshi Kaneshiro</a>
+								<a href="https://en.wikipedia.org/wiki/Tony_Leung_Chiu-wai" target="_blank">Tony Leung</a>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div class=" tile  col-lg-8" style="border: 0.1px solid black;">
+			<div class="row ">
+				<!-- movie poster -->
+				<div class="col-2 p-1"><img src="img/tiles/amelie.jpg" class="w-100" alt=""></div>
+				<div class="col-10 p-1">
+					<div class="row">
+						<div class="col-10" >
+							<!-- movie name -->
+							<a href="../p3/index.html">
+							<h4><b>Amélie</b>(2001) <span class="lang"> French</span></h4></a>
+						</div>
+						<div class="col-2">
+							<!-- rating -->
+							<h4><i class="fas fa-star"></i> 8.3</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- description -->
+							<p>Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- cast and crew -->
+							<p><b>Director:</b><a href="https://en.wikipedia.org/wiki/Jean-Pierre_Jeunet" target="_blank"> Jean-Pierre Jeunet</a></p>
+							<p><b>Cast:</b>
+								<a href="https://en.wikipedia.org/wiki/Audrey_Tautou" target="_blank"> Audrey Tautou,</a>
+								<a href="https://en.wikipedia.org/wiki/Mathieu_Kassovitz" target="_blank"> Mathieu Kassovitz,</a>
+								<a href="https://en.wikipedia.org/wiki/Rufus_(actor)" target="_blank"> Rufus</a>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div class=" tile  col-lg-8" style="border: 0.1px solid black;">
+			<div class="row ">
+				<!-- movie poster -->
+				<div class="col-2 p-1"><img src="img/tiles/mom.jpg" class="w-100" alt=""></div>
+				<div class="col-10 p-1">
+					<div class="row">
+						<div class="col-10" >
+							<!-- movie name -->
+							<a href="../p4/index.html">
+							<h4><b>Memories of Murder</b>(2003)<span class="lang"> Korean</span></h4></a>
+						</div>
+						<div class="col-2">
+							<!-- rating -->
+							<h4><i class="fas fa-star"></i> 8.1</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- description -->
+							<p>In a small Korean province in 1986, two detectives struggle with the case of multiple young women being found raped and murdered by an unknown culprit.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- cast and crew -->
+							<p><b>Director:</b><a href="https://en.wikipedia.org/wiki/Bong_Joon-ho" target="_blank"> Bong Joon-Ho</a></p>
+							<p><b>Cast:</b>
+								<a href="https://en.wikipedia.org/wiki/Song_Kang-ho" target="_blank"> Song Kang-Ho,</a>
+								<a href="https://en.wikipedia.org/wiki/Kim_Sang-kyung" target="_blank"> Kim Sang-Kyung,</a>
+								<a href="https://en.wikipedia.org/wiki/Kim_Roi-ha" target="_blank"> Kim Roi-Ha</a>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div class=" tile  col-lg-8" style="border: 0.1px solid black;">
+			<div class="row ">
+				<!-- movie poster -->
+				<div class="col-2 p-1"><img src="img/tiles/as.png" class="w-100 pt-2" alt=""></div>
+				<div class="col-10 p-1">
+					<div class="row">
+						<div class="col-10" >
+							<!-- movie name -->
+							<a href="../p5/index.html">
+							<h4><b>A Seperation</b>(2011) <span class="lang"> Persian</span></h4></a>
+						</div>
+						<div class="col-2">
+							<!-- rating -->
+							<h4><i class="fas fa-star"></i> 8.3</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- description -->
+							<p>A married couple are faced with a difficult decision - to improve the life of their child by moving to another country or to stay in Iran and look after a deteriorating parent who has Alzheimer's disease.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- cast and crew -->
+							<p><b>Director:</b><a href="https://en.wikipedia.org/wiki/Asghar_Farhadi" target="_blank"> Asghar Farhadi</a></p>
+							<p><b>Cast:</b>
+								<a href="https://en.wikipedia.org/wiki/Leila_Hatami" target="_blank"> Leila Hatami,</a>
+								<a href="https://en.wikipedia.org/wiki/Payman_Maadi" target="_blank"> Payman Maadi, </a>
+								<a href="https://en.wikipedia.org/wiki/Shahab_Hosseini" target="_blank"> Shahab Hosseini</a>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div class=" tile  col-lg-8" style="border: 0.1px solid black;">
+			<div class="row ">
+				<!-- movie poster -->
+				<div class="col-2 p-1"><img src="img/tiles/malena.jpg" class="w-100" alt=""></div>
+				<div class="col-10 p-1">
+					<div class="row">
+						<div class="col-10" >
+							<!-- movie name -->
+							<a href="../p6/index.html">
+							<h4><b>Malena</b>(2000) <span class="lang"> Italian</span></h4></a>
+						</div>
+						<div class="col-2">
+							<!-- rating -->
+							<h4><i class="fas fa-star"></i> 7.5</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- description -->
+							<p>Amidst the war climate, a teenage boy discovering himself becomes love-stricken by Malèna, a sensual woman living in a small, narrow-minded Italian town.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- cast and crew -->
+							<p><b>Director:</b><a href="https://en.wikipedia.org/wiki/Giuseppe_Tornatore" target="_blank"></a> Giuseppe Tornatore</p>
+							<p><b>Cast:</b>
+								<a href="https://en.wikipedia.org/wiki/Monica_Bellucci" target="_blank"> Monica Bellucci, </a>
+								<a href="https://it.wikipedia.org/wiki/Giuseppe_Sulfaro" target="_blank">Giuseppe Sulfaro</a>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div class=" tile  col-lg-8" style="border: 0.1px solid black;">
+			<div class="row ">
+				<!-- movie poster -->
+				<div class="col-2 p-1"><img src="img/tiles/cog.jpg" class="w-100" alt=""></div>
+				<div class="col-10 p-1">
+					<div class="row">
+						<div class="col-10" >
+							<!-- movie name -->
+							<a href="../p7/index.html">
+							<h4><b>City of God</b>(2002)<span class="lang"> Portuguese</span></h4></a>
+						</div>
+						<div class="col-2">
+							<!-- rating -->
+							<h4><i class="fas fa-star"></i> 8.6</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- description -->
+							<p>In the slums of Rio, two kids' paths diverge as one struggles to become a photographer and the other a kingpin.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- cast and crew -->
+							<p><b>Director:</b><a href="https://en.wikipedia.org/wiki/Fernando_Meirelles" target="_blank">Fernando Meirelles, </a><a href="https://en.wikipedia.org/wiki/K%C3%A1tia_Lund">Katia Lund</a></p>
+							<p><b>Cast:</b>
+								<a href="https://en.wikipedia.org/wiki/Alexandre_Rodrigues_(actor)" target="_blank">Alexandre Rodrigues, </a>
+								<a href="https://en.wikipedia.org/wiki/Leandro_Firmino" target="_blank">Leandro Firmino, </a>
+								<a href="https://en.wikipedia.org/wiki/Jonathan_Haagensen" target="_blank">Jonathan Haagensen</a>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div class=" tile  col-lg-8" style="border: 0.1px solid black;">
+			<div class="row ">
+				<!-- movie poster -->
+				<div class="col-2 p-1"><img src="img/tiles/md.jpg" class="w-100" alt=""></div>
+				<div class="col-10 p-1">
+					<div class="row">
+						<div class="col-10" >
+							<!-- movie name -->
+							<a href="../p8/index.html">
+							<h4><b>Motorcycle Diaries</b>(2004)<span class="lang"> Espanol</span></h4></a>
+						</div>
+						<div class="col-2">
+							<!-- rating -->
+							<h4><i class="fas fa-star"></i> 7.8</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- description -->
+							<p>The dramatization of a motorcycle road trip Che Guevara went on in his youth that showed him his life's calling.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- cast and crew -->
+							<p><b>Director:</b><a href="https://en.wikipedia.org/wiki/Walter_Salles" target="_blank"> Walter Salles</a></p>
+							<p><b>Cast:</b>
+								<a href="https://en.wikipedia.org/wiki/Gael_Garc%C3%ADa_Bernal" target="_blank"> Gael Garcia Bernal, </a>
+								<a href="https://en.wikipedia.org/wiki/Rodrigo_de_la_Serna" target="_blank">Rodrigo de la Serna, </a>
+								<a href="https://en.wikipedia.org/wiki/M%C3%ADa_Maestro" target="_blank"> Mía Maestro</a>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div class=" tile  col-lg-8" style="border: 0.1px solid black;">
+			<div class="row ">
+				<!-- movie poster -->
+				<div class="col-2 mt-3"><img src="img/tiles/solaris.jpg" class="w-100" alt=""></div>
+				<div class="col-10 p-1">
+					<div class="row">
+						<div class="col-10" >
+							<!-- movie name -->
+							<a href="../p9/index.html">
+							<h4><b>Solaris</b>(1972)<span class="lang"> Russian</span></h4></a>
+						</div>
+						<div class="col-2">
+							<!-- rating -->
+							<h4><i class="fas fa-star"></i> 8.0</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- description -->
+							<p>A psychologist is sent to a station orbiting a distant planet in order to discover what has caused the crew to go insane.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- cast and crew -->
+							<p><b>Director:</b><a href="https://en.wikipedia.org/wiki/Andrei_Tarkovsky" target="_blank"> Andrei Tarkovsky</a></p>
+							<p><b>Cast:</b>
+								<a href="https://en.wikipedia.org/wiki/Donatas_Banionis" target="_blank"> Donatas Banionis, </a>
+								<a href="https://en.wikipedia.org/wiki/Natalya_Bondarchuk" target="_blank">Natalya Bondarchuk, </a>
+								<a href="https://en.wikipedia.org/wiki/J%C3%BCri_J%C3%A4rvet" target="_blank"> Jüri Järvet</a>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		
+		<div class=" tile  col-lg-8" style="border: 0.1px solid black;">
+			<div class="row ">
+				<!-- movie poster -->
+				<div class="col-2 p-1" ><img src="img/tiles/td.jpg" class="w-100" alt=""></div>
+				<div class="col-10 p-1">
+					<div class="row">
+						<div class="col-10" >
+							<!-- movie name -->
+							<a href="../p10/index.html">
+							<h4><b>Taxi Driver</b>(1976)<span class="lang"> English</span></h4></a>
+						</div>
+						<div class="col-2">
+							<!-- rating -->
+							<h4><i class="fas fa-star"></i> 8.2</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- description -->
+							<p>A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- cast and crew -->
+							<p><b>Director:</b><a href="https://en.wikipedia.org/wiki/Martin_Scorsese" target="_blank"> Martin Scorsese</a></p>
+							<p><b>Cast:</b>
+								<a href="https://en.wikipedia.org/wiki/Robert_De_Niro" target="_blank"> Robert De Niro, </a>
+								<a href="https://en.wikipedia.org/wiki/Jodie_Foster" target="_blank">Jodie Foster, </a>
+								<a href="https://en.wikipedia.org/wiki/Albert_Brooks" target="_blank">Albert Brooks</a>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div class=" tile  col-lg-8" style="border: 0.1px solid black;">
+			<div class="row ">
+				<!-- movie poster -->
+				<div class="col-2 p-1 "><img src="img/tiles/satya.jpg" class="w-100 " alt=""></div>
+				<div class="col-10 p-1">
+					<div class="row">
+						<div class="col-10" >
+							<!-- movie name -->
+							<a href="../p11/index.html">
+							<h4><b>Satya</b>(1998) <span class="lang"> Telugu, Hindi</span></h4></a>
+						</div>
+						<div class="col-2">
+							<!-- rating -->
+							<h4><i class="fas fa-star"></i> 8.3</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- description -->
+							<p>An innocent man is embroiled in underworld after being falsely charged and sets out to punish the perpetrators who subjected his life to misery.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12" >
+							<!-- cast and crew -->
+							<p><b>Director:</b><a href="https://en.wikipedia.org/wiki/Ram_Gopal_Varma" target="_blank"> Ram Gopal Varma</a></p>
+							<p><b>Cast:</b>
+								<a href="https://en.wikipedia.org/wiki/J._D._Chakravarthy" target="_blank"> J D Chakravarthy, </a>
+								<a href="https://en.wikipedia.org/wiki/Urmila_Matondkar" target="_blank"> Urmila Matondkar, </a>
+								<a href="https://en.wikipedia.org/wiki/Paresh_Rawal" target="_blank">Paresh Rawal</a>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+	</div> {% endcomment %}
+	<!-- movie tiles section end -->
+
+	<!-- Footer -->
+	<footer >
+		<div class="headr ">
+			<div class="row text-center p-3 justify-content-center">
+				<div class="col-lg-8">
+					<ul class="social ">
+						<li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+						<li><a href="#"><i class="fab fa-telegram-plane fa-2x"></i></a></li>
+						<li><a href="#"><i class="fab fa-reddit fa-2x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+
+	<!-- Script Source Files -->
+
+	<!-- jQuery -->
+	<script src="{% static 'movie/js/jquery-3.5.1.min.js' %}"></script>
+	<!-- Bootstrap 4.5 JS -->
+	<script src="{% static 'movie/js/bootstrap.min.js' %}"></script>
+	<!-- Popper JS -->
+	<script src="{% static 'movie/js/popper.min.js' %}"></script>
+	<!-- Font Awesome -->
+	<script src="{% static 'movie/js/all.min.js' %}"></script>
+
+	<!-- End Script Source Files -->
+</body>
+</html>
